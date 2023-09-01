@@ -18,4 +18,4 @@ use Illuminate\Support\Facades\Route;
 // });
 
 
-Route::get('/search/', 'PostsController@search')->name('search');
+Route::get('/search/', 'PostsController@search')->name('search');   //search
