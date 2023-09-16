@@ -28,6 +28,7 @@ class StatusController extends AdminController
 
         $grid->column('st_id', __('St id'));
         $grid->column('st_name', __('St name'));
+        $grid->column('st_description', __('St description'));
         $grid->column('created_at', __('Created at'));
         $grid->column('updated_at', __('Updated at'));
 
@@ -46,6 +47,7 @@ class StatusController extends AdminController
 
         $show->field('st_id', __('St id'));
         $show->field('st_name', __('St name'));
+        $show->field('st_description', __('St description'));
         $show->field('created_at', __('Created at'));
         $show->field('updated_at', __('Updated at'));
 
@@ -62,6 +64,7 @@ class StatusController extends AdminController
         $form = new Form(new Status());
 
         $form->text('st_name', __('St name'));
+        $form->text('st_description', __('St description'));
 
         return $form;
     }

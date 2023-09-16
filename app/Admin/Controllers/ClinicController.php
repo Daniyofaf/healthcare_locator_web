@@ -28,6 +28,13 @@ class ClinicController extends AdminController
 
         $grid->column('c_id', __('C id'));
         $grid->column('c_name', __('C name'));
+        $grid->column('Region', __('Region'));
+        $grid->column('Zone', __('Zone'));
+        $grid->column('Wereda', __('Wereda'));
+        $grid->column('Latitude', __('Latitude'));
+        $grid->column('Longitude', __('Longitude'));
+        $grid->column('Service', __('Service'));
+        $grid->column('Status', __('Status'));
         $grid->column('created_at', __('Created at'));
         $grid->column('updated_at', __('Updated at'));
 
@@ -46,6 +53,13 @@ class ClinicController extends AdminController
 
         $show->field('c_id', __('C id'));
         $show->field('c_name', __('C name'));
+        $show->field('Region', __('Region'));
+        $show->field('Zone', __('Zone'));
+        $show->field('Wereda', __('Wereda'));
+        $show->field('Latitude', __('Latitude'));
+        $show->field('Longitude', __('Longitude'));
+        $show->field('Service', __('Service'));
+        $show->field('Status', __('Status'));
         $show->field('created_at', __('Created at'));
         $show->field('updated_at', __('Updated at'));
 
@@ -62,6 +76,13 @@ class ClinicController extends AdminController
         $form = new Form(new Clinic());
 
         $form->text('c_name', __('C name'));
+        $form->text('Region', __('Region'));
+        $form->text('Zone', __('Zone'));
+        $form->text('Wereda', __('Wereda'));
+        $form->text('Latitude', __('Latitude'));
+        $form->text('Longitude', __('Longitude'));
+        $form->text('Service', __('Service'));
+        $form->text('Status', __('Status'));
 
         return $form;
     }

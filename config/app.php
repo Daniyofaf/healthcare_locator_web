@@ -155,6 +155,12 @@ return [
     |
     */
 
+    'providers' => [
+        // ...
+        Laravel\Scout\ScoutServiceProvider::class,  //mine
+    ],
+
+
     'providers' => ServiceProvider::defaultProviders()->merge([
         /*
          * Package Service Providers...

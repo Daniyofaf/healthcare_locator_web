@@ -4,6 +4,10 @@ use Illuminate\Routing\Router;
 
 Admin::routes();
 
+Route::prefix('amakari')->group(function () {
+    // Your admin routes here
+});
+
 Route::group([
     'prefix'        => config('admin.route.prefix'),
     'namespace'     => config('admin.route.namespace'),
@@ -21,5 +25,7 @@ Route::group([
     $router->resource('locations', LocationController::class);
 
     // Route::get('/search/', 'PostsController@search')->name('search');
+    //Route::post('/search', 'PostsController@search');
+    //Route::post('hospital', 'HospitalAndClinicFormController@store');
 
 });

@@ -11,7 +11,7 @@ return [
     | login page.
     |
     */
-    'name' => 'Open Admin',
+    'name' => 'Amakari Health Care Locator',
 
     /*
     |--------------------------------------------------------------------------
@@ -22,7 +22,7 @@ return [
     | `img` tag, eg '<img src="http://logo-url" alt="Admin logo">'.
     |
     */
-    'logo' => '<b>Open</b> Admin',
+    'logo' => '<b>Amakari</b> Health Care Locator',
 
     /*
     |--------------------------------------------------------------------------
@@ -34,7 +34,7 @@ return [
     | '<img src="http://logo-url" alt="Admin logo">'.
     |
     */
-    'logo-mini' => '<b>OA</b>',
+    'logo-mini' => '<b>AHCL</b>',
 
     /*
     |--------------------------------------------------------------------------
@@ -307,7 +307,11 @@ return [
     | This value is used to set the background image of login page.
     |
     */
-    'login_background_image' => '',
+    //'login_background_image' => '',
+    //'public/img/R.jpg' => 'public/img/R.jpg',
+    'login_background_image' => 'public/image/R.jpg',
+
+
 
     /*
     |--------------------------------------------------------------------------
