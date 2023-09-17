@@ -274,6 +274,7 @@ return [
     |
     */
     'map_provider' => 'openstreetmaps',
+    
 
     /*
     |--------------------------------------------------------------------------
@@ -309,7 +310,7 @@ return [
     */
     //'login_background_image' => '',
     //'public/img/R.jpg' => 'public/img/R.jpg',
-    'login_background_image' => 'public/image/R.jpg',
+    'login_background_image' => 'public/image/3.jpeg',
 
 
 

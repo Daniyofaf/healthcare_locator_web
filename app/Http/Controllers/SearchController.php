@@ -45,7 +45,7 @@ class SearchController extends Controller
             $results = Specialized_Hospital::search($query)->get();
         } elseif ($table === 'specialized_clinics') {
             $results = Specialized_Clinic::search($query)->get();
-        } elseif ($table === 'Clinics') {
+        } elseif ($table === 'clinics') {
             $results = Clinic::search($query)->get();
         } else {
             //default

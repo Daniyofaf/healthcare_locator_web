@@ -19,13 +19,19 @@ class Specialized_Clinic extends Model
     public function toSearchableArray()
     {
         return [
-            'name' => $this->name,
+            'sc_name' => $this->name,
             'Region' => $this->name,
            'Zone' => $this->name,
            'Wereda' => $this->name,
            'Service' => $this->Service
             // Add more attributes you want to search here
         ];
+    }
+
+    //  mine
+    public function status()
+    {
+        return $this->belongsTo(Status::class);
     }
 
 }

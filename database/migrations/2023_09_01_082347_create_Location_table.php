@@ -15,15 +15,15 @@ class CreateLocationTable extends Migration
     {
         Schema::create('Location', function (Blueprint $table) {
             $table->increments('l_id');
-            $table->integer('h_id')->index()->nullable();
-            $table->integer('c_id')->index()->nullable();
-            $table->integer('sh_id')->index()->nullable();
-            $table->integer('sc_id')->index()->nullable();
-            $table->string('region')->nullable();
-            $table->string('zone')->nullable();
-            $table->string('wereda')->nullable();
-            $table->string('latitude')->nullable();
-            $table->string('longitude')->nullable();
+            // $table->integer('h_id')->index()->nullable();
+            // $table->integer('c_id')->index()->nullable();
+            // $table->integer('sh_id')->index()->nullable();
+            // $table->integer('sc_id')->index()->nullable();
+            $table->string('Region')->nullable();
+            $table->string('Zone')->nullable();
+            $table->string('Wereda')->nullable();
+            $table->string('Latitude')->nullable();
+            $table->string('Longitude')->nullable();
             $table->timestamps();
         });
     }

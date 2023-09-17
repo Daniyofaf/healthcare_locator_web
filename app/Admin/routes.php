@@ -1,6 +1,10 @@
 <?php
 
 use Illuminate\Routing\Router;
+use App\Admin\Controllers\HospitalController;
+use App\Admin\Controllers\ClinicController;
+use App\Admin\Controllers\Specialized_Clinic_Controller;
+use App\Admin\Controllers\Specialized_Hospital_Controller;
 
 Admin::routes();
 

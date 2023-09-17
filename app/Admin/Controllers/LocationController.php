@@ -27,10 +27,10 @@ class LocationController extends AdminController
         $grid = new Grid(new Location());
 
         $grid->column('l_id', __('L id'));
-        $grid->column('h_id', __('H id'));
-        $grid->column('c_id', __('C id'));
-        $grid->column('sh_id', __('Sh id'));
-        $grid->column('sc_id', __('Sc id'));
+        // $grid->column('h_id', __('H id'));
+        // $grid->column('c_id', __('C id'));
+        // $grid->column('sh_id', __('Sh id'));
+        // $grid->column('sc_id', __('Sc id'));
         $grid->column('region', __('Region'));
         $grid->column('zone', __('Zone'));
         $grid->column('wereda', __('Wereda'));
@@ -53,10 +53,10 @@ class LocationController extends AdminController
         $show = new Show(Location::findOrFail($id));
 
         $show->field('l_id', __('L id'));
-        $show->field('h_id', __('H id'));
-        $show->field('c_id', __('C id'));
-        $show->field('sh_id', __('Sh id'));
-        $show->field('sc_id', __('Sc id'));
+        // $show->field('h_id', __('H id'));
+        // $show->field('c_id', __('C id'));
+        // $show->field('sh_id', __('Sh id'));
+        // $show->field('sc_id', __('Sc id'));
         $show->field('region', __('Region'));
         $show->field('zone', __('Zone'));
         $show->field('wereda', __('Wereda'));
@@ -77,10 +77,10 @@ class LocationController extends AdminController
     {
         $form = new Form(new Location());
 
-        $form->number('h_id', __('H id'));
-        $form->number('c_id', __('C id'));
-        $form->number('sh_id', __('Sh id'));
-        $form->number('sc_id', __('Sc id'));
+        // $form->number('h_id', __('H id'));
+        // $form->number('c_id', __('C id'));
+        // $form->number('sh_id', __('Sh id'));
+        // $form->number('sc_id', __('Sc id'));
         $form->text('region', __('Region'));
         $form->text('zone', __('Zone'));
         $form->text('wereda', __('Wereda'));

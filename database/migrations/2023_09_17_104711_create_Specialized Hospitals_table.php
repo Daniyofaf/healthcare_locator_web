@@ -13,17 +13,9 @@ class CreateSpecializedHospitalsTable extends Migration
      */
     public function up()
     {
-        Schema::create('Specialized_Hospitals', function (Blueprint $table) {
+        Schema::create('Specialized Hospitals', function (Blueprint $table) {
             $table->increments('sh_id');
             $table->string('sh_name')->nullable();
-            $table->string('Region')->nullable();
-            $table->string('Zone')->nullable();
-            $table->string('Wereda')->nullable();
-            $table->string('Service')->nullable();
-            // $table->string('Status')->nullable();
-            $table->string('Latitude')->nullable();
-            $table->string('Longitude')->nullable();
-            // $table->string('st_id')->index()->nullable();
             $table->timestamps();
         });
     }
@@ -35,6 +27,6 @@ class CreateSpecializedHospitalsTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('Specialized_Hospitals');
+        Schema::dropIfExists('Specialized Hospitals');
     }
 }

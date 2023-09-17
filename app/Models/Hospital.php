@@ -13,11 +13,7 @@ class Hospital extends Model
 
     protected $primaryKey = 'h_id';
 
-    //mine
-    // public function status()
-    // {
-    //     return $this->belongsTo(Status::class);
-    // }
+  
 
    // Define the searchable attributes
    public function toSearchableArray()
@@ -33,5 +29,11 @@ class Hospital extends Model
            // Add more attributes you want to search here
        ];
    }
+
+    //  mine
+    public function status()
+    {
+        return $this->belongsTo(Status::class);
+    }
 
 }

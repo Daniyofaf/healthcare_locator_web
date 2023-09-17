@@ -23,7 +23,7 @@ class CreateHospitalTable extends Migration
             // $table->string('Status')->nullable();
             $table->string('Latitude')->nullable();
             $table->string('Longitude')->nullable();
-            $table->string('st_id')->index()->nullable();
+            // $table->string('st_id')->index()->nullable();
             $table->timestamps();
         });
     }

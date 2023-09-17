@@ -16,13 +16,6 @@ class CreateClinicsTable extends Migration
         Schema::create('Clinics', function (Blueprint $table) {
             $table->increments('c_id');
             $table->string('c_name')->nullable();
-            $table->string('Region')->nullable();
-            $table->string('Zone')->nullable();
-            $table->string('Wereda')->nullable();
-            $table->string('Latitude')->nullable();
-            $table->string('Longitude')->nullable();
-            $table->string('Service')->nullable();
-            // $table->string('Status')->nullable();
             $table->timestamps();
         });
     }

@@ -28,4 +28,11 @@ class Specialized_Hospital extends Model
             // Add more attributes you want to search here
         ];
     }
+
+    //  mine
+    public function status()
+    {
+        return $this->belongsTo(Status::class);
+    }
+    
 }
