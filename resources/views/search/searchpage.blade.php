@@ -167,7 +167,7 @@
 
 </head>
 
-<body style="background-color: white">
+<body style="background-image: url(assets/img/3.jpeg)">
 
 <div id="preloader"></div>
   <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
@@ -228,7 +228,11 @@
                   <h5>
                     <p class="result-description"><strong>Address:</strong> {{ $result->Region }}, {{ $result->Zone }}, {{ $result->Wereda }}</p>
                   </h5>
-                  <p><strong>Service:</strong> {{ $result->Service }} </p>
+                  <p><strong>Service:</strong>
+            @foreach ($result->Service as $service)
+                {{ $service }},
+            @endforeach
+        </p>
 
                 </div>
 

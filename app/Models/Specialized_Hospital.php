@@ -34,5 +34,7 @@ class Specialized_Hospital extends Model
     {
         return $this->belongsTo(Status::class);
     }
-    
+    protected $casts = [
+        'Service' => 'array',
+    ];
 }

@@ -34,6 +34,8 @@ class Clinic extends Model
     {
         return $this->belongsTo(Status::class, 'status_id');
     }
-
+    protected $casts = [
+        'Service' => 'array',
+    ];
 }
 
