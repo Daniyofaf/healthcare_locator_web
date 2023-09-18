@@ -7,7 +7,7 @@
 
 
 
-<div id="map" style="width: 100%; height: 300px; bg-color:black"></div>
+<div id="map" style="width: 100%; height: 300px;"></div>
 
 <!-- <script>
     function initMap() {
@@ -28,7 +28,7 @@
 </script> -->
 
 
-<!-- <script>
+<script>
   var map = new ol.Map({
     target: 'map',
     layers: [
@@ -41,7 +41,7 @@
       zoom: 15 // Set the initial zoom level
     })
   });
-</script> -->
+</script>
 
 <!-- <script>
   var map = L.map('map').setView([51.505, -0.09], 13); // Initial center and zoom level
@@ -60,14 +60,7 @@
 // $Latitude = [];
 // $Longitude = [];
 
-  var Latitude = {{ $latitude }}; // Replace with your actual variable
-  var Longitude = {{ $longitude }}; // Replace with your actual variable
 
-  var map = L.map('map').setView([latitude, longitude], 13); // Set center and zoom level
-
-  L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
-    attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
-  }).addTo(map);
 
   // You can add markers, popups, and other map features here
 </script>

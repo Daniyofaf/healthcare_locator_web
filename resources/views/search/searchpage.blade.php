@@ -43,10 +43,10 @@
   <style>
     /* Reset some default styles */
     body {
-      margin: 0;
+      margin-top: -20px;
       display: flex;
       flex-direction: column;
-      min-height: 80vh;
+      
     }
 
     .main {
@@ -56,7 +56,7 @@
     }
 
     form {
-      margin-top: -300px;
+      margin-top: -350px;
     }
 
 
@@ -155,9 +155,10 @@
     #container1 p {
       font-size: 40px;
     }
-    .footer{
+    footer{
+      align-content: center;
       margin-bottom: -50px;
-    }
+        }
 
   </style>
 
@@ -167,6 +168,10 @@
 </head>
 
 <body style="background-color: white">
+
+<div id="preloader"></div>
+  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
   <header>
     <!-- ======= Header ======= -->
     @extends('layouts.header')
@@ -294,9 +299,7 @@
 
 
 
-  <div id="preloader"></div>
-  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
-
+ 
   <!-- Vendor JS Files -->
   <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
   <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
