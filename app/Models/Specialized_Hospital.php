@@ -21,9 +21,9 @@ class Specialized_Hospital extends Model
     {
         return [
             'sh_name' => $this->name,
-            'Region' => $this->name,
-           'Zone' => $this->name,
-           'Wereda' => $this->name,
+            'Region' => $this->Region,
+           'Zone' => $this->Zone,
+           'Wereda' => $this->Wereda,
            'Service' => $this->Service
             // Add more attributes you want to search here
         ];

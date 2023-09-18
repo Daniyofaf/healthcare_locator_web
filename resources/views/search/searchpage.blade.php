@@ -46,6 +46,15 @@
       margin-top: -20px;
       display: flex;
       flex-direction: column;
+      height: 10px;
+      
+    }
+
+    body img{
+      margin-top: -20px;
+      display: flex;
+      flex-direction: column;
+      height: 10px;
       
     }
 
@@ -140,12 +149,8 @@
 
     }
 
-    .img {
-      height: 600px;
-      }
-      #hero{
-        background:#555 ;
-      }
+    
+      
 
     #container1 {
       padding-left: 50px;
@@ -155,10 +160,7 @@
     #container1 p {
       font-size: 40px;
     }
-    footer{
-      align-content: center;
-      margin-bottom: -50px;
-        }
+   
 
   </style>
 
@@ -167,7 +169,7 @@
 
 </head>
 
-<body style="background-image: url(assets/img/3.jpeg)">
+<body style="background-image: url(assets/img/3.jpeg)">  
 
 <div id="preloader"></div>
   <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
@@ -183,7 +185,7 @@
 
 
     <!-- ======= Hero Section ======= -->
-    <div id="hero" class="img" style="background-image: url(assets/img/3.jpeg)">
+    <div id="hero" class="img" > 
       <div class="overlay-itro"></div>
       <div class="hero-content display-table">
         <div class="table-cell">
@@ -211,7 +213,7 @@
           </form>
           
 
-          <div class="search-results">
+          <div class="search-results" >
             <!-- Your search result items -->
             @if(count($results) > 0)
 
@@ -224,7 +226,7 @@
 
               <li class="search-result">
                 <div class="result-info">
-                  <h2 class="result-title">{{ $result->h_name }}</h2>
+                  <h2 class="result-title">{{ $result->h_name }}{{ $result->c_name }}{{ $result->sc_name }}{{ $result->sh_name }}</h2>
                   <h5>
                     <p class="result-description"><strong>Address:</strong> {{ $result->Region }}, {{ $result->Zone }}, {{ $result->Wereda }}</p>
                   </h5>
@@ -272,12 +274,16 @@
             @else
             <p></p>
             @endif
+     
+
+            
           </div>
 
 
 
 
         </div>
+        
         </section>
       </div>
 
@@ -285,9 +291,8 @@
 
 
 
-      <footer>      @include('layouts.footer')
-</footer>
-
+         
+      @include('layouts.footer')
     </div>
 
   </div>
@@ -319,7 +324,7 @@
 
 
 
-</body>
+</body >
 
 </html>
 

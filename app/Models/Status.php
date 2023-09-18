@@ -6,7 +6,16 @@ use Illuminate\Database\Eloquent\Model;
 
 class Status extends Model
 {
-    protected $table = 'Status';
+    protected $table = 'status';
 
     protected $primaryKey = 'st_id';
+
+
+
+    // protected $casts = [
+    //     'Status' => 'array',
+    // ];
+
 }
+
+
