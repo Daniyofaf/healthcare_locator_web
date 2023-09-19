@@ -44,7 +44,15 @@ class Hospital extends Model
 
 public function Location()
 {
-    return $this->hasOne(Location::class);
+    return $this->belongsTo(Location::class, 'l_id');
 }
 
+}
+
+class Post extends Hospital
+{
+    public function author()
+    {
+        return $this->belongsTo(User::class, 'author_id');
+    }
 }
