@@ -24,7 +24,7 @@
             <p class="">&copy; Copyright <a href="http://amakari.et/"><strong>Amakari</strong></a> 2023 All Rights Reserved</p>
             <div class="">
 
-              Designed by <a href="https://roydtechs.com/">Royd Techs</a>
+              Designed by <a href="https://roydtechs.com/"><strong>Royd Techs</strong></a>
             </div>
 </div>
   <!-- End  Footer --> 
