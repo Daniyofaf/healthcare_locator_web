@@ -7,7 +7,10 @@ use OpenAdmin\Admin\Form;
 use OpenAdmin\Admin\Grid;
 use OpenAdmin\Admin\Show;
 use \App\Models\Hospital;
-use App\Models\Service;
+use \App\Models\Service;
+use \App\Models\Location; // Import the Location model
+use Illuminate\Http\Request; // Import the correct Request class
+
 
 class HospitalController extends AdminController
 {
@@ -98,7 +101,7 @@ class HospitalController extends AdminController
         $form = new Form(new Hospital());
 
         $form->text('h_name', __('Hospital Name'));
-          // $form->text('Service', __('Service'));
+        // $form->text('Service', __('Service'));
         // Fetch the services from the 'services' table
         //    $services = Service::pluck('s-name', 's_id');
 
@@ -109,7 +112,7 @@ class HospitalController extends AdminController
         $form->text('Region', __('Region/City'));
         $form->text('Zone', __('Zone/Sub-City'));
         $form->text('Wereda', __('Wereda/Unique Area'));
-      
+
 
 
         // $form->text('Status', __('Status'));
@@ -122,11 +125,50 @@ class HospitalController extends AdminController
         ]);
 
 
-        
+  
 
 
         // $form->text('st_id', __('St id'));
 
         return $form;
     }
+
+ 
+
+    
+/**
+     * Store a newly created resource in storage.
+     *
+     * @param  \Illuminate\Http\Request  $request
+     * @return \Illuminate\Http\Response
+     */
+    public function stores(Request $request)
+    {
+    // Validate the form data if needed
+    // ...
+
+    // Create a new Hospital record
+    $hospital = new Hospital();
+    // $hospital->h_name = $request->input('h_name');
+    // Set other attributes...
+
+    // Save the Hospital record
+    $hospital->save();
+
+    // Create a new Location record with the location data
+    $location = new Location();
+    $location->Region = $request->input('Region');
+    $location->Zone = $request->input('Zone');
+    $location->Wereda = $request->input('Wereda');
+    $location->Latitude = $request->input('Latitude');
+    $location->Longitude = $request->input('Longitude');
+    $hospital->Location()->save($location); // Associate the location with the hospital
+
+    // Create and associate other related records if needed
+
+    // Redirect to the desired route
+    return redirect()->route('search')->with('success', 'Hospital created successfully.');
+}
+
+
 }

@@ -30,12 +30,21 @@ class Hospital extends Model
        ];
    }
 
-    //  mine
-    public function status()
-    {
-        return $this->belongsTo(Status::class);
-    }
+   
     protected $casts = [
         'Service' => 'array',
     ];
+
+
+//mine
+// public function Location()
+// {
+//     return $this->belongsTo(Location::class, 'l_id');
+// }
+
+public function Location()
+{
+    return $this->hasOne(Location::class);
+}
+
 }

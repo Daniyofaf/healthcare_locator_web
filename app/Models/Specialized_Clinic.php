@@ -28,12 +28,16 @@ class Specialized_Clinic extends Model
         ];
     }
 
-    //  mine
-    public function status()
-    {
-        return $this->belongsTo(Status::class);
-    }
+   
     protected $casts = [
         'Service' => 'array',
     ];
+
+
+    //mine
+    public function status()
+    {
+        return $this->belongsTo(Location::class, 'l_id');
+    }
+
 }

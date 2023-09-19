@@ -25,6 +25,8 @@ class SearchController extends Controller
 
         // Initialize $results to an empty array to avoid "compact() Undefined variable" error
         $results = [];
+        $noResultsMessage = [];
+
 
         // Perform the search query based on the selected table
         if ($table === 'AnyHealthCare') {
@@ -47,13 +49,16 @@ class SearchController extends Controller
             $results = Specialized_Clinic::search($query)->get();
         } elseif ($table === 'clinics') {
             $results = Clinic::search($query)->get();
-        } else {
-            //default
-            
-            
+        } 
+        
+        // Check if there are no search results, then set the "No results found" message
+        if (count($results) === 0) {
+            $noResultsMessage = "";
         }
+            
+        
 
         // Pass $results to your view for display
-       return view('search.results', compact('results'));
+       return view('search.results', compact('results', 'noResultsMessage'));
     }
 }
