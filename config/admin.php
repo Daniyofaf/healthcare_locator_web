@@ -308,9 +308,9 @@ return [
     | This value is used to set the background image of login page.
     |
     */
-    //'login_background_image' => '',
-    //'public/img/R.jpg' => 'public/img/R.jpg',
-    'login_background_image' => 'public/image/3.jpeg',
+    'login_background_image' => asset('assets\dist\img\R.jpg)'),
+
+    
 
 
 

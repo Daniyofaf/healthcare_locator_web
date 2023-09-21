@@ -12,7 +12,11 @@
   padding-left: 450px;
   width: 104%;
   margin-left: -55px;
-  margin-top: 350px;
+  margin-top: 325px;
+  padding-top: 15px;
+}
+.cent{
+  padding-left: 80px;
 }
 
 </style>
@@ -22,7 +26,7 @@
   <!-- ======= Footer ======= -->
   <div class="foot">
             <p class="">&copy; Copyright <a href="http://amakari.et/"><strong>Amakari</strong></a> 2023 All Rights Reserved</p>
-            <div class="">
+            <div class="cent">
 
               Designed by <a href="https://roydtechs.com/"><strong>Royd Techs</strong></a>
             </div>

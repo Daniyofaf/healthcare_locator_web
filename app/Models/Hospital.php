@@ -36,11 +36,7 @@ class Hospital extends Model
     ];
 
 
-//mine
-// public function Location()
-// {
-//     return $this->belongsTo(Location::class, 'l_id');
-// }
+
 
 public function Location()
 {
@@ -51,8 +47,8 @@ public function Location()
 
 class Post extends Hospital
 {
-    public function author()
+    public function Location()
     {
-        return $this->belongsTo(User::class, 'author_id');
+        return $this->belongsTo(Location::class, 'l_id');
     }
 }

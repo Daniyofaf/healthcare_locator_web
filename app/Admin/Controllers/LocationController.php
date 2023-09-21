@@ -84,8 +84,12 @@ class LocationController extends AdminController
         $form->text('region', __('Region'));
         $form->text('zone', __('Zone'));
         $form->text('wereda', __('Wereda'));
-        $form->text('latitude', __('Latitude'));
-        $form->text('longitude', __('Longitude'));
+        // $form->text('latitude', __('Latitude'));
+        // $form->text('longitude', __('Longitude'));
+        $form->map('Latitude', 'Longitude', 'Location')->default([
+            'lat' => 9.005401,
+            'lng' => 38.763611,
+        ]);
 
         return $form;
     }

@@ -36,7 +36,7 @@ class Specialized_Hospital extends Model
 
 
     //mine
-    public function status()
+    public function Location()
     {
         return $this->belongsTo(Location::class, 'l_id');
     }

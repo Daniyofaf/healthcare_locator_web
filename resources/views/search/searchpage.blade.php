@@ -22,13 +22,6 @@
   <!-- Template Main CSS File -->
   <link href="assets/css/style.css" rel="stylesheet">
 
-  <!-- =======================================================
-  * Template Name: DevFolio
-  * Updated: Mar 10 2023 with Bootstrap v5.2.3
-  * Template URL: https://bootstrapmade.com/devfolio-bootstrap-portfolio-html-template/
-  * Author: BootstrapMade.com
-  * License: https://bootstrapmade.com/license/
-  ======================================================== -->
 
 
   <!-- <script src="https://maps.googleapis.com/maps/api/js?key="></script> -->\
@@ -173,7 +166,7 @@
 
 </head>
 
-<body style="background-image: url(assets/img/3.jpeg)">  
+<body style="background-image: url(img/R.jpg)">  
 
 <div id="preloader"></div>
   <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
@@ -196,7 +189,7 @@
           <div class="container" id="container1">
 
             <h1 class=""><strong>Search your nearby&nbsp;</strong></h1>
-            <p class="hero-subtitle"><strong><span class="typed" data-typed-items="Hospitals, Clinics, Specialized Hospital, Specialized Clinic"> </span></strong></p>
+            <p class="hero-subtitle"><strong><span class="typed" data-typed-items="Hospitals, Clinics, Specialized Hospitals, Specialized Clinics"> </span></strong></p>
 
           </div>
 
@@ -209,7 +202,7 @@
                 <option value="clinics">Clinic</option>
                 <option value="specialized_clinics">Specialized Clinic</option>
               </select>
-              <input type="text" name="query" class="form-control" placeholder="Search Healthcare ex: hospital around 22,addis abeba ...">
+              <input type="text" name="query" class="form-control" placeholder="Search like Hospital around 22">
               <div class="input-group-append">
                 <button class="btn btn-outline-primary" type="submit">Search</button>
               </div>

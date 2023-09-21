@@ -4,6 +4,7 @@ namespace App\Models;
 
 use Illuminate\Database\Eloquent\Model;
 use Laravel\Scout\Searchable;
+use App\Models\Location;
 
 class Specialized_Clinic extends Model
 {
@@ -21,23 +22,22 @@ class Specialized_Clinic extends Model
         return [
             'sc_name' => $this->name,
             'Region' => $this->Region,
-           'Zone' => $this->Zone,
-           'Wereda' => $this->Wereda,
-           'Service' => $this->Service
+            'Zone' => $this->Zone,
+            'Wereda' => $this->Wereda,
+            'Service' => $this->Service
             // Add more attributes you want to search here
         ];
     }
 
-   
+
     protected $casts = [
         'Service' => 'array',
     ];
 
 
     //mine
-    public function status()
+    public function Location()
     {
         return $this->belongsTo(Location::class, 'l_id');
     }
-
 }
